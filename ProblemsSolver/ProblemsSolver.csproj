@@ -40,8 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Problem2\Solvers\ICanSolveProblem2.cs" />
+    <Compile Include="Problem2\Solvers\MetodoIterativoComIf.cs" />
+    <Compile Include="Problem2\Solvers\MetodoIterativoSemIf.cs" />
     <Compile Include="Problem1Solver.cs" />
-    <Compile Include="Problem2Solver.cs" />
+    <Compile Include="Problem2\Problem2Solver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

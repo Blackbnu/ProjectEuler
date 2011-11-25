@@ -1,5 +1,7 @@
 ﻿using NUnit.Framework;
 using ProblemsSolver;
+using ProblemsSolver.Problem2;
+using ProblemsSolver.Problem2.Solvers;
 using SharpTestsEx;
 
 namespace Problems
@@ -26,7 +28,8 @@ namespace Problems
             //By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
             #endregion
 
-            new Problem2Solver().Solve(TipoSolucao.IterativaSemIf).Should().Be(4613732);
+            new Problem2Solver(new MetodoIterativoSemIf()).Solve().Should().Be(4613732);
+            new Problem2Solver(new MetodoIterativoComIf()).Solve().Should().Be(4613732);
         }
     }
 }
