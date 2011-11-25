@@ -26,7 +26,7 @@ namespace Problems
             //By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
             #endregion
 
-            new Problem2Solver().Solve().Should().Be(4613732);
+            new Problem2Solver().Solve(TipoSolucao.IterativaSemIf).Should().Be(4613732);
         }
     }
 }
